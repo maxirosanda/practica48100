@@ -1,0 +1,97 @@
+.tarjetas{
+    margin-top: 30px;
+    h2{
+        width: auto;
+        text-align: center;
+        border-bottom: 3px solid $colorEstrellas;
+        padding-bottom: 10px;
+    }
+}
+
+.tarjeta{
+    width: 280px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: $sombra;
+    position: relative;
+    cursor: pointer;
+    .foto{
+        border-radius: 10px 10px 0px 0px;
+        position: relative;
+        overflow: hidden;
+        .oferta{
+            position: absolute;
+            bottom: 0;
+            background-color: $colorPrimario;
+            padding: 5px;
+            p{
+                color: white;
+                margin: 0;
+            }
+            
+
+        }
+    }
+    .contenido{
+        padding: 10px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        height: 259px;
+        .estrellas{
+            i{
+                color: $colorEstrellas;
+            }
+            
+        }
+        a{
+            text-decoration: none;
+            color: $colorTexto;
+        }
+
+        .text{
+            color: $colorTexto;
+        }
+    }
+ 
+    &:hover .backgroundEffect {
+        border-radius: 10px;
+        bottom: 0;
+        height: 350px;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        background: $colorSecundario;
+        animation: popBackground 0.3s ease-in
+    }
+
+    &:hover .text {
+        color: white;
+    }
+}
+
+@keyframes popBackground {
+    0% {
+        height: 20px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+
+    50% {
+        height: 80px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+
+    75% {
+        height: 160px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+
+    100% {
+        height: 350px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+
+    }
+}

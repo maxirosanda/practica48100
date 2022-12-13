@@ -1,0 +1,41 @@
+.navPaginacion{
+    ul{
+        list-style: none;
+        padding: 0;
+        li{
+            a{
+                text-decoration: none;
+                color: $colorTexto;
+                display: block;
+                padding: 10px 20px;
+                text-align: center;
+                border: 1px solid $colorTexto;
+                @media(max-width:576px){
+                    padding: 8px 16px;
+                }
+                &:hover{
+                    background-color: $colorPrimario;
+                    color: white;
+                    transition: 0.25s;
+                }
+                &:hover i{
+                    color: white;
+                    transition: 0.25s;
+                }
+            }
+            .activo{
+                background-color: $colorPrimario;
+                color: white;
+            }
+            .arrow-left{
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+            .arrow-right{
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+        }
+    }
+}
+

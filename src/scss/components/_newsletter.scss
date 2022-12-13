@@ -1,0 +1,47 @@
+.newsletter{
+    .newsletter-input{
+        position: relative;
+        width: 90%;
+        height: 70px;
+        margin: auto;
+    }
+    input{
+        position: absolute;
+        width: 100%;
+        right: 0px;
+        border: solid 2px $colorPrimario;
+        border-radius:  10px;
+        outline: none;
+        font-size: 16px;
+        padding: 10px;
+    }
+    button{
+        position: absolute;
+        right: 15px;
+        top: 3px;
+        height: 40px;
+        width: 40px;
+        font-size: 16px;
+        border-radius: 50%;
+        border: solid 2px $colorPrimario;
+        padding: 5px;
+        transition: 0.35s;
+        &:hover{
+            background-color: $colorPrimario;
+        }
+        &:hover i{
+            color:white ;
+        }
+        i{
+            color: $colorPrimario;
+        }
+    }
+
+    h2{
+        font-size: 48px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+}

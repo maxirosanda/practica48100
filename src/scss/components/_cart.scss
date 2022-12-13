@@ -1,0 +1,51 @@
+.carrito{
+    &-producto{
+        width: 600px;
+        font-size: 20px;
+        border-bottom: 2px solid $colorPrimario;
+        @media(max-width:578px){
+            width: 350px;
+            font-size: 16px;
+            }
+        .producto-digital{
+            font-size: 16px;
+            @media(max-width:768px){
+                font-size: 12px;
+                }
+        }
+        .foto{
+            width: 100px;
+        }
+        i{
+            font-size: 24px;
+        }
+        button{
+            border: 0;
+            background-color: transparent;
+        }
+
+    }
+}
+
+.resumen{
+    background-color: $colorPrimario;
+    border-radius: 10px;
+    button{
+        @extend .boton;
+        background-color: white;
+        color: $colorPrimario;
+        
+    }
+    @media(max-width:1074px){
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+        width: 100%;
+        border-radius: 0;
+        box-shadow: $sombraSuperior;
+    }
+}
+
+.atrasFixed{
+    height: 250px;
+}
